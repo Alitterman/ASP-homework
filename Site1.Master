@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="大作业.Site1" %>
+
+<!DOCTYPE html
+
+<html lang="zh-CN">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/webmaster.css" rel="stylesheet" type="text/css" />
+    <title>新闻发布</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            left: 15px;
+            top: -285px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" class="home-container" runat="server">
+        <div>
+            <div class="header">
+                <div class="header-right common-component-wrapper">
+                    <div class="weather-wrapper">
+                        <div class="weather-abstract"><span>广州</span><i title="多云" class="weather-icon weather-icon-white-1"></i><span class="city_state">多云</span><span class="city_temperature">32<!-- -->℃</span><span class="air">优</span></div>
+                        <div class="weather-hover">
+                            <div class="w-header"><i class="header-bg"></i><span class="change weather-change-button">切换</span><span class="time">06月06日</span></div>
+                            <ul class="days-weather">
+                                <li class="day"><span class="title">今天(周日)</span><i title="多云" class="weather-icon weather-icon-1"></i><span class="temperature"><em>23℃</em> ~ 33℃</span></li>
+                                <li class="day"><span class="title">明天(周一)</span><i title="中雨" class="weather-icon weather-icon-8"></i><span class="temperature"><em>24℃</em> ~ 32℃</span></li>
+                                <li class="day"><span class="title">后天(周二)</span><i title="中雨" class="weather-icon weather-icon-8"></i><span class="temperature"><em>24℃</em> ~ 31℃</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="publisher-icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2BAMAAAB+a3fuAAAAMFBMVEVHcEz////////////////////////////////////////////////wQULxTU73mpuw3LHGAAAADHRSTlMA799wQJ8agLpfoM+GoKk6AAABPklEQVQ4y5WUrU4DQRDHp1DaFNWEgKrgASpKgqxoUosADQIUtgrFA1Sc6ANg8Fgc5rZtOMIEnmDhBfh4AWjoHd3bmb2dIfzd5JfMzs7HH6DU8LiLZrwPVdWP8FfbgxCdd9DJTDha9yiEjQSpzClhe8i15VETQ41KdlJhc4c2sKrDFbuMsPtV/RhTr2BnUbZTsG6UZTlqIYpJ1wSWJ73y4fPHF6+UPPdtX32QLudG0rzbFxINYJNE1lrWmprI2nAgshn0RTaFRGRzhT2W31tYp0+3NeBaYr1ccxx7IuztHyyaU6vlTvxDBjcK03qm9VqbkTZbbSegI+yS4ZfCdvBBPAfEXfGMEAtDSKLI/Hlj2m1qN81aE3oBm1PgIar3aJ4FDe4HGfU6aFGY9riBEpheVDz5WvTk3MvHSy+/JV7+A8tEjs/vnGz4AAAAAElFTkSuQmCC" alt="发布作品"><a one-link-mark="yes">发布作品</a></div>
+                    <a class="login-button" href="https://sso.toutiao.com/login/" one-link-mark="yes">登录</a></div>
+                <div class="header-left"><a href="//app.toutiao.com/news_article/" target="_blank" rel="noopener" one-link-mark="yes">下载头条APP</a><a href="/about/" target="_blank" rel="noopener" one-link-mark="yes">关于头条</a><a role="button" tabindex="0" one-link-mark="yes">反馈</a><a href="/complain/" target="_blank" rel="noopener" one-link-mark="yes">侵权投诉</a></div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
